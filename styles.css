@@ -1,0 +1,99 @@
+/* Google Font:Open-sans Roboto */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/* ---- Variables ---- 
+------------------------*/
+:root {
+  /* fonts */
+  --font-primary: "Roboto", "sans-serif";
+  --font-secondary: "Open-Sans", "sans-serif";
+
+  /* different colors */
+  --clr-primary: #102a42;
+  --clr-bg-primary: #f2f5f7;
+}
+
+/* Global Styles 
+----------------------*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--font-primary);
+  background-color: var(--clr-bg-primary);
+  color: var(--clr-primary);
+  line-height: 1.5;
+}
+
+nav{
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Navbar 
+---------------*/
+.nav-container{
+  max-width: 1280px;
+  padding: 32px 54px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-container h4{
+  text-transform: uppercase;
+  color:#49a6e9;
+  letter-spacing: 4px;
+}
+ul{
+  list-style-type: none;
+  display: flex;
+  gap:20px;
+}
+ul a{
+  text-decoration: none;
+  color:#063251;
+  font-weight: 700;
+}
+ul a:hover{
+  color:#49a6e9;
+}
+
+/* main
+--------------- */
+main{
+  max-width: 1280px;
+  padding: 32px 54px;
+  min-height: calc(100vh - 88px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main h2{
+  background-color: #222;
+  color:#fff; 
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.banner-btn{
+  text-transform: uppercase;
+  background: transparent;
+  font-weight: 700;
+  transition: all 0.3sec linear;
+  border: 2px solid black;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.banner-btn:hover{
+  background-color: black;
+  color:white
+}
