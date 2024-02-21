@@ -97,3 +97,7 @@ main h2{
   background-color: black;
   color:white
 }
+
+.current-bg{
+  color: #f2f5f7;
+}
